@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TB_demo_dh/20230505/demo/app/src/main/res/drawable/shape_bg_bt.xml" value="0.1" />
+        <entry key="..\:/TB_demo_dh/20230505/demo/app/src/main/res/drawable/shape_bg_fff_4.xml" value="0.1" />
+        <entry key="..\:/TB_demo_dh/20230505/demo/app/src/main/res/layout/activity_order_detail.xml" value="0.25" />
+        <entry key="..\:/TB_demo_dh/20230505/demo/mylibrary/src/main/res/layout/toast_view_alertdialog.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/shape_bg_bt.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/shape_bg_fff_4.xml" value="0.104" />
+        <entry key="app/src/main/res/layout/activity_add_order.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_order_2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_ques.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_order_detail.xml" value="0.17142857142857143" />
+        <entry key="app/src/main/res/layout/activity_pass_word_reset.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_talk.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/custom_umeng_share_item.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_fragment2.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_fragment3.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/item_home.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/item_list.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/item_list_talk.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/item_order_list.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/layout_pop.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/umeng_socialize_oauth_dialog.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/umeng_socialize_share.xml" value="0.26666666666666666" />
+        <entry key="mylibrary/src/main/res/drawable/selector_pickerview_btn.xml" value="0.104" />
+        <entry key="mylibrary/src/main/res/layout/dialog_loading.xml" value="0.26666666666666666" />
+        <entry key="mylibrary/src/main/res/layout/include_pickerview_topbar.xml" value="0.26666666666666666" />
+        <entry key="mylibrary/src/main/res/layout/layout_basepickerview.xml" value="0.26666666666666666" />
+        <entry key="mylibrary/src/main/res/layout/pickerview_options.xml" value="0.26666666666666666" />
+        <entry key="mylibrary/src/main/res/layout/pickerview_time.xml" value="0.16062683643486778" />
+        <entry key="mylibrary/src/main/res/layout/view_list_empty.xml" value="0.25104166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
