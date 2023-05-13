@@ -8,10 +8,6 @@ import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
 
-/**
- * Created by apple on 16/4/6.
- * 封装的适配器的类
- */
 public abstract class CommonAdapter<T> extends BaseAdapter {
     public Context context;
     public ArrayList<T> datas;
