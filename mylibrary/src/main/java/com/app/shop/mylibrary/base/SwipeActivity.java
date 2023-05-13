@@ -23,21 +23,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.app.shop.mylibrary.R;
 
 
-/**
- * 滑动关闭页面基类，使用时继承此类并使用BlankTheme主题即可
- */
 public abstract class SwipeActivity extends AppCompatActivity {
 
     private SwipeLayout swipeLayout;
 
-    /**
-     * 是否可以滑动关闭页面
-     */
     protected boolean swipeEnabled = true;
 
-    /**
-     * 是否可以在页面任意位置右滑关闭页面，如果是false则从左边滑才可以关闭。
-     */
     protected boolean swipeAnyWhere = false;
 
     public SwipeActivity() {
@@ -101,7 +92,7 @@ public abstract class SwipeActivity extends AppCompatActivity {
 
     class SwipeLayout extends FrameLayout {
 
-        //private View backgroundLayer;用来设置滑动时的背景色
+        //private View backgroundLayer;
         private Drawable leftShadow;
 
         public SwipeLayout(Context context) {
@@ -143,9 +134,7 @@ public abstract class SwipeActivity extends AppCompatActivity {
         }
 
         boolean canSwipe = false;
-        /**
-         * 超过了touchslop仍然没有达到没有条件，则忽略以后的动作
-         */
+
         boolean ignoreSwipe = false;
         View content;
         Activity mActivity;
@@ -286,11 +275,6 @@ public abstract class SwipeActivity extends AppCompatActivity {
         }
 
 
-        /**
-         * 弹回，不关闭，因为left是0，所以setX和setTranslationX效果是一样的
-         *
-         * @param withVel 使用计算出来的时间
-         */
         private void animateBack(boolean withVel) {
             cancelPotentialAnimation();
             animator = ObjectAnimator.ofFloat(this, "contentX", getContentX(), 0);
