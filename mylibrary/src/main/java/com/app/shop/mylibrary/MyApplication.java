@@ -41,7 +41,7 @@ public class MyApplication extends Application {
     }
 
 
-    //退出时关闭所有的activity
+    // exit activity
     public void exit() {
         for (Activity activity : activityList) {
             activity.finish();
