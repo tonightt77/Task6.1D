@@ -1,9 +1,5 @@
 package com.app.shop.mylibrary.beans;
 
-/**
- * Created by seven on 2016/8/5.
- */
-
 public class MainConfig {
 
     private String message;
@@ -39,7 +35,7 @@ public class MainConfig {
 
     public static class DataBean {
 
-        public String queryCustomTemplet;           //定制列表模板
+        public String queryCustomTemplet;           
 
     }
 }
