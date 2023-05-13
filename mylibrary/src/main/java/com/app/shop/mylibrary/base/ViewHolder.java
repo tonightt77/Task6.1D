@@ -6,10 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by apple on 16/4/6.
- * 封装的ViewHolder
- */
 public class ViewHolder {
     private SparseArray<View> views;
     public int mPositon;
@@ -30,7 +26,7 @@ public class ViewHolder {
             return holder;
         }
     }
-    /*获取VeiwHolder中封装的控件*/
+
     public <T extends View> T getView(int viewId){
         View view = views.get(viewId);
         if (view ==null){
