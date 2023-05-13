@@ -18,13 +18,6 @@ import de.greenrobot.event.EventBus;
 import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
 
-/**
- * @anthor : 大海
- * 每天进步一点点
- * @time :   2019/12/26
- * @description :
- */
-
 
 public class BaseFragment extends Fragment {
 
@@ -42,10 +35,6 @@ public class BaseFragment extends Fragment {
     }
 
 
-    /**
-     * fragment处理back事件的方法
-     * return  true表示要处理，false表示不处理
-     */
     public boolean onBackPressed() {
         return false;
     }
@@ -55,16 +44,11 @@ public class BaseFragment extends Fragment {
         super.onDestroy();
 
 
-        //移除所有的粘性事件
         EventBus.getDefault().removeAllStickyEvents();
-        //取消注册
         EventBus.getDefault().unregister(this);
 
     }
 
-    /**
-     * fragment intent跳转
-     */
     public void skipActivity(Activity aty, Class<?> cls, Bundle extras) {
         Intent intent = new Intent();
         intent.putExtras(extras);
@@ -82,18 +66,14 @@ public class BaseFragment extends Fragment {
         getActivity().overridePendingTransition(R.anim.start_in, R.anim.start_out);
     }
 
-    /**
-     * 在要接收消息的页面,注册EventBus
-     */
+
     public void registerEventBus() {
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this);
         }
     }
 
-    /**
-     * 在要接收消息页面的onDestroy方法中,反注册EventBus
-     */
+
     public void unRegisterEventBus() {
         EventBus.getDefault().unregister(this);
     }
