@@ -31,16 +31,9 @@ import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
 
 
-/**
- * @author yangshenghui
- * activity页面基类
- */
 public abstract class BaseActivity extends SwipeActivity {
 
 
-    /**
-     * 修改顶部栏颜色
-     */
     public void setSystemToolbarColor() {
         StatusBarUtil.setStatusBarColor(this, R.color.color_title_bar);
         StatusBarUtil.StatusBarLightMode(this);
@@ -50,7 +43,6 @@ public abstract class BaseActivity extends SwipeActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setSystemToolbarColor();
         super.onCreate(savedInstanceState);
-        //android 8.0 上设置竖屏 会和透明主题冲突报错
         if (Build.VERSION.SDK_INT != 26) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//竖屏
         }
@@ -99,14 +91,12 @@ public abstract class BaseActivity extends SwipeActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        //停止截屏监听
 
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        //停止截屏监听
 
     }
 
@@ -115,9 +105,7 @@ public abstract class BaseActivity extends SwipeActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        //移除所有的粘性事件
         EventBus.getDefault().removeAllStickyEvents();
-        //取消注册
         EventBus.getDefault().unregister(this);
 
     }
