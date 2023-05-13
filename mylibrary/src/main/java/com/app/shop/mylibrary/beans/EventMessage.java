@@ -36,14 +36,14 @@ public class EventMessage {
         return Num;
     }
 
-    //消息类型
-    public static final int LOGIN = 1;//登陆
-    public static final int DEL_words = 41;//
 
-    public static final int Click = 5;//关闭
-    public static final int Click_1 = 51;//关闭
+    public static final int LOGIN = 1;// login
+    public static final int DEL_words = 41;
 
-    public static final int ADD = 6;//添加
+    public static final int Click = 5;
+    public static final int Click_1 = 51;
+
+    public static final int ADD = 6;// add
     public static final int refresh = 7;
 
 
