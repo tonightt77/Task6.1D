@@ -12,10 +12,6 @@ import org.json.JSONException;
 
 import java.util.Map;
 
-
-/**
- * Created by seven on 2016/5/21.
- */
 public class HttpHelp {
 
 
@@ -32,7 +28,7 @@ public class HttpHelp {
         this.url = url;
     }
 
-    //普通请求 get
+
     public void getHttp2( ) {
 
         OkGo.<String>get(url).tag(context).execute(new StringCallback() {
@@ -52,19 +48,13 @@ public class HttpHelp {
     }
 
 
-    //这里添加自定义的一些操作
+
     public void getHttp(final Map map) {
         initHttpSecret(map);
     }
 
 
-    /**
-     * 网络请求:
-     *
-     * @param map 参数集合
-     */
     private void initHttpSecret(final Map map) {
-        //这里封装公共参数
         HttpPublishConfig.setPublicParam(map);
 
         String paramJson = new Gson().toJson(map);
